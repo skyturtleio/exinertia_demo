@@ -2,13 +2,23 @@ defmodule ExinertiaDemoWeb.PageController do
   use ExinertiaDemoWeb, :controller
 
   def home(conn, _params) do
-    # The home page is often custom made,
-    # so skip the default app layout.
-    render(conn, :home, layout: false)
+    # redirect to Inertia.js pages
+    redirect(conn, to: ~p"/i")
   end
 
-  def inertia(conn, _params) do
+  def welcome(conn, _params) do
     conn
-    |> render_inertia("Dashboard")
+    |> render_inertia("Welcome")
+  end
+
+  def counter(conn, _params) do
+    conn
+    |> render_inertia("Counter")
+  end
+
+  def stock(conn, _params) do
+    # The default home page that comes with a 
+    # new Phoenix project
+    render(conn, :home, layout: false)
   end
 end

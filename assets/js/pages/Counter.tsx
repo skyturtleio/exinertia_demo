@@ -21,14 +21,14 @@ const Dashboard: React.FC = () => {
           <button
             type="button"
             onClick={decrement}
-            className="px-4 py-2 bg-red-500 text-white rounded"
+            className="px-4 py-2 bg-red-600 bg--300 text-white rounded"
           >
             Decrement
           </button>
           <button
             type="button"
             onClick={increment}
-            className="px-4 py-2 bg-green-500 text-white rounded"
+            className="px-4 py-2 bg-green-600 text-white rounded"
           >
             Increment
           </button>
