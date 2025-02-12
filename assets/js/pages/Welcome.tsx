@@ -15,7 +15,7 @@ export default function WelcomePage({ message, name }: WelcomeProps) {
       <p className="pt-4">
         The code for this project can be found <a
           className="underline"
-          href="https://github.com/skyturtleio/monolith"
+          href="https://github.com/skyturtleio/exinertia_demo"
         >
           here</a>.
       </p>
