@@ -8,6 +8,8 @@ defmodule ExinertiaDemoWeb.PageController do
 
   def welcome(conn, _params) do
     conn
+    |> assign_prop(:message, "Phoenix + Inertia.js + React 🔥")
+    |> assign_prop(:name, "skyturtleio")
     |> render_inertia("Welcome")
   end
 

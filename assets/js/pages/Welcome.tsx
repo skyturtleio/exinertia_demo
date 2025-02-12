@@ -11,7 +11,7 @@ export default function WelcomePage({ message, name }: WelcomeProps) {
     <>
       <Head title="Welcome" />
       <h1 className="text-2xl font-bold underline">{message}</h1>
-      <p className="pt-4">Hello <span className="text-green-600 font-semibold">{name}</span>, welcome to your first Inertia app!</p>
+      <p className="pt-4">Hello <span className="text-green-600 font-semibold">{name}</span>, welcome the Inertia.js demo app!</p>
       <p className="pt-4">
         The code for this project can be found <a
           className="underline"

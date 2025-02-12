@@ -1,18 +1,3 @@
-# ExinertiaDemo
+# Exinertia Demo
 
-To start your Phoenix server:
-
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+This is pretty much the same demo application as [monolith](https://github.com/skyturtleio/monolith); however assets are generated and mangaged using [Vite.js](https://vite.dev/) and [Bun](https://hexdocs.pm/bun/Bun.html). The setup to get all of the Inertia.js boilerplate was done using [ExInertia](https://github.com/nordbeam/exinertia).
