@@ -1,21 +1,16 @@
-
-function Profile() {
+function MyButton() {
   return (
-    <img
-      src="https://i.imgur.com/MK3eW3As.jpg"
-      alt="Katherine Johnson"
-    />
-  )
+    <button className="rounded-sm m-2 p-2 bg-sky-600 text-white">
+      I'm a button
+    </button>
+  );
 }
 
 export default function TicTacToe() {
   return (
-    <section>
-      <h1>Amazing scientists</h1>
-      <Profile />
-      <Profile />
-      <Profile />
-    </section>
-  )
-
+    <div>
+      <h1 className="text-2xl font-semibold mb-2">Tic Tac Toe</h1>
+      <MyButton />
+    </div>
+  );
 }
