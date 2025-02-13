@@ -24,17 +24,17 @@ defmodule ExinertiaDemoWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/i", ExinertiaDemoWeb do
+  scope "/", ExinertiaDemoWeb do
     pipe_through :inertia
     get "/", PageController, :welcome
     get "/counter", PageController, :counter
+    get "/tictactoe", PageController, :tictactoe
   end
 
-  scope "/", ExinertiaDemoWeb do
+  scope "/stock", ExinertiaDemoWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
-    get "/stock", PageController, :stock
+    get "/", PageController, :stock
   end
 
   # Other scopes may use custom stacks.
