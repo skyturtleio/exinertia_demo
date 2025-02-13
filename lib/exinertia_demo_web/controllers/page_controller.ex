@@ -1,11 +1,6 @@
 defmodule ExinertiaDemoWeb.PageController do
   use ExinertiaDemoWeb, :controller
 
-  def home(conn, _params) do
-    # redirect to Inertia.js pages
-    redirect(conn, to: ~p"/i")
-  end
-
   def welcome(conn, _params) do
     conn
     |> assign_prop(:message, "Phoenix + Inertia.js + React 🔥")
@@ -16,6 +11,11 @@ defmodule ExinertiaDemoWeb.PageController do
   def counter(conn, _params) do
     conn
     |> render_inertia("Counter")
+  end
+
+  def tictactoe(conn, _params) do
+    conn
+    |> render_inertia("TicTacToe")
   end
 
   def stock(conn, _params) do
