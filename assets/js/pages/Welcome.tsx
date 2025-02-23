@@ -18,10 +18,13 @@ export default function WelcomePage({ message, name }: WelcomeProps) {
       <Head title="Welcome" />
       <h1 className="text-2xl font-bold underline">{message}</h1>
       <p className="pt-4">
-        Hello <span className="text-green-600 font-semibold">{visitor}</span>,
-        welcome to the Inertia.js demo app!
+        Hello{" "}
+        <span className="font-semibold text-green-600">
+          {visitor ? visitor : "there"}
+        </span>
+        , welcome to the Inertia.js demo app!
       </p>
-      <div className="my-2">
+      <div className="mb-2 mt-8">
         <input
           type="text"
           value={visitor}
@@ -30,6 +33,11 @@ export default function WelcomePage({ message, name }: WelcomeProps) {
           className="rounded-md"
         />
       </div>
+      {visitor === "" || visitor == "there" ? (
+        <p className="text-sm">Enter your name to customize the message</p>
+      ) : (
+        ""
+      )}
       <p className="pt-12">
         The code for this project can be found{" "}
         <a
